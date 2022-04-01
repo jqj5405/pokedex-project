@@ -1,6 +1,6 @@
-<div class="header">
-  <h1>Kanto Pokemon</h1>
+<div class="header center">
+  <h1>PokeDex</h1>
 </div>
-<div class="main">
-  <app-profile *ngFor="let pokemon of starterPokemon"></app-profile>
+<div class="main center">
+  <app-profile *ngFor="let pokemon of display; let i = index" [name]="pokemon" (click)="onClick(i)"></app-profile>
 </div>

@@ -1,3 +1,17 @@
 <mat-card>
-    <p>profile works!</p>
+    <div class="center">
+        <img [src]="pokemon?.sprites" alt="pokemon profile">
+    </div>
+    <hr>
+    <div class="center">
+        <mat-card-title>{{ pokemon?.name }}</mat-card-title>
+    </div>
+    <mat-card-content>
+        <div>#{{ pokemon?.id }}</div>
+        <div>{{ pokemon?.weight }} kg</div>
+        <div>{{ pokemon?.height }} m</div>
+        <ul>
+            <li *ngFor="let index of pokemon?.types">{{ index.type.name }}</li>
+        </ul>
+    </mat-card-content>
 </mat-card>

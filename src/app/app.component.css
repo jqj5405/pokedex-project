@@ -1,9 +1,12 @@
-.header {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 350px;
+}
+
+.header {
   height: 75px;
-  width: 100vw;
   background-color: black;
 }
 
@@ -13,9 +16,7 @@ h1 {
 }
 
 .main {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   height: calc(100vh - 75px);
-  width: 100vw;
 }
